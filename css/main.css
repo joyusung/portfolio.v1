@@ -16,12 +16,14 @@
 *{margin: 0; padding: 0;}
 a{text-decoration: none; color: #111; display: block;
     font-family: 'Noto Sans KR', sans-serif; white-space: nowrap;
+    cursor: url('../img/mouse_over.png'),auto;
 }
 li{list-style: none;}
 header, section, footer{width: 100%; float: left;}
 div{box-sizing: border-box;}
 img{width: 100%;}
 html, body{
+    cursor: url('../img/mouse.png'),default;
     font-family: 'Noto Sans KR', sans-serif;
 }
 .wrap{
@@ -507,6 +509,11 @@ header nav ul li .deco i{
     border: 10px solid #fff;
     border-radius: 50%;
     background-image: url(../img/character.png);
+    transition: all 0.5s;
+}
+.section.s2 .center_box > .box1:hover .me{
+    background-image: url(../img/character_hover.png);
+    transition: all 0.5s;
 }
 .section.s2 .center_box > .box1 h1{
     width: 250px;
@@ -822,6 +829,10 @@ header nav ul li .deco i{
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    font-family: 'twayair';
+}
+.section.s4 .detail h2{
+    margin-bottom: 20px;
 }
 .section.s4 .detail .btn{
     display: flex !important;
@@ -829,7 +840,7 @@ header nav ul li .deco i{
 .section.s4 .detail button{
     border: none;
     background-color: transparent;
-    margin: 30px auto;
+    margin: 20px auto;
 }
 .section.s4 .detail button a{
     width: 150px;
@@ -842,18 +853,23 @@ header nav ul li .deco i{
     text-align: center;
     font-weight: bold;
     float: left;
+    font-family: 'twayair';
 }
 .section.s4 .detail button.m a{
     background-color: #b487f0;
 }
 .section.s4 .detail p{
     margin-top: 10px;
+    font-size: 13px;
+    font-family: 'twayair';
 }
 .section.s4 .detail span{
-    width: 70px;
-    height: 30px;
+    width: 54px;
+    height: 58px;
     display: block;
     float: left;
+    text-align: right;
+    margin-right: 5px;
 }
 .swiper-pagination-bullet{
     width: 50px;
@@ -867,6 +883,9 @@ header nav ul li .deco i{
 }
 .swiper-pagination-bullet-active{
     background-image: url(../img/slider-icon1.png);
+}
+.swiper-pagination-clickable .swiper-pagination-bullet{
+    cursor: url('../img/mouse_over.png'),auto;
 }
 
 
@@ -905,6 +924,7 @@ header nav ul li .deco i{
 }
 .section.s5 .graphic ul li .title{
     text-align: center;
+    font-family: 'twayair';
 }
 .section.s5 .graphic ul li p{
     font-size: 24px;
@@ -916,7 +936,7 @@ header nav ul li .deco i{
 }
 .section.s5 .graphic ul li span{
     font-size: 18px;
-    font-weight: bold;
+    /* font-weight: bold; */
     transition: all 0.5s;
 }
 .section.s5 .graphic ul li .image{
@@ -1033,7 +1053,7 @@ header nav ul li .deco i{
     margin: auto;
     width: 50px;
     height: 50px;
-    cursor: pointer;
+    cursor: url('../img/mouse_over.png'),auto;
 }
 .leftright{
     height: 4px;
@@ -1074,6 +1094,7 @@ label{
 .close-container:hover .leftright{
     transform: rotate(-45deg);
     background-color: #F25C66;
+    cursor: url('../img/mouse_over.png'),auto;
 }
 .close-container:hover .rightleft{
     transform: rotate(45deg);
@@ -1311,5 +1332,3 @@ footer p span{
     font-size: 18px;
     color: #666;
 }
-
-
